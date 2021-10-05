@@ -14,8 +14,11 @@ body{
     display: table;
     clear: both;
 }
+a {
+    text-decoration: none;
+}
 
-/* Content */
+/* Container */
 
 .wrapper {
     height:calc(100vh - 100px);
@@ -25,23 +28,105 @@ body{
 
 aside {
     width: 250px;
-    background-color: chocolate;
+    background-color: black;
     height: 100%;
     float:left;
+    color: #929292;
 }
+
+a {
+    color: #929292;
+}
+
+.logo img {
+    height: 36px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+   
+}
+.element span{ 
+    vertical-align: middle;
+    display: inline-block;
+}
+aside .element {
+    margin:7px 20px;
+    font-size: 13px;
+}
+
+.element img{
+    height: 27px;
+    vertical-align: middle;
+}
+.create-playlist {
+    margin: 10px 0;
+}
+
+.playlist {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.playlist span {
+    
+    color: white;
+    font-weight: 700;
+}
+
+
+.playlist-name {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.playlist-name div{
+    margin-bottom: 10px;
+}
+/* i{
+ font-size: 20px;
+    color: white;
+} */
+
+
+
 
 /* Main */
 
 main {
     width:calc(100% - 250px);
-    background-color: crimson;
+    background-color: #101319;
     height: 100%;
     float:left;
+    position: relative;
+}
+
+.cta {
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 1;  
+    text-align: right;
+    line-height: 80px;
+}
+
+button {
+    color: white;
+    vertical-align: middle;
+    border: 1px solid white;
+    background-color:rgba(0, 0, 0, 0.205); ;
+    border-radius: 24px;
+    padding: 8px 32px;
+    font-size: 11px;
+    margin-right: 4px;
 }
 
 /* Player */
 
 .player {
     height: 100px;
-    background-color: blueviolet;
+    background-color: #1e1e1e;
 }
