@@ -48,6 +48,8 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+
 }
 
 a {
@@ -117,6 +119,8 @@ aside .element {
 }
 .bottom-column{
     margin-left: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .profile-img{
@@ -224,6 +228,8 @@ nav ul li a {
 .player-bar {
     height: 100px;
     background-color: #1e1e1e;
+    z-index: 1;
+    position: relative;
 }
 
 .player-bar {
