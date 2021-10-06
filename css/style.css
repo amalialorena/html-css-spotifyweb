@@ -175,7 +175,7 @@ main {
     float:left;
 }
 main h3 {
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
 main h4 {
@@ -235,6 +235,9 @@ nav ul li a {
      margin-bottom: 15px;
  }
 
+ .round img{
+    border-radius: 50%;
+}
  
 
  .content-block img{
