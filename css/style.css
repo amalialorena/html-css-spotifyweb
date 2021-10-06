@@ -17,6 +17,19 @@ body{
 a {
     text-decoration: none;
 }
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+    font-size: 17px;
+}
+
+h4 {
+    color: #929292;
+    font-weight: 500;
+    font-size: 13px;
+}
 
 /* Container */
 
@@ -65,13 +78,13 @@ aside .element {
     margin: 10px 0;
 }
 
-.playlist {
+.side-playlist {
     margin-top: 30px;
     margin-left: 20px;
     font-size: 14px;
 }
 
-.playlist span {
+.side-playlist span {
     color: white;
     font-weight: 700;
 }
@@ -128,11 +141,10 @@ aside .element {
     margin-left: 5px;
 }
 
-
-/* i{
+i{
  font-size: 20px;
     color: white;
-} */
+}
 
 
 
@@ -144,13 +156,10 @@ main {
     background-color: #101319;
     height: 100%;
     float:left;
-    position: relative;
 }
 
+/* Call to action */
 .cta {
-    position: absolute;
-    top:0;
-    right: 0;
     height: 80px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.205);
@@ -170,9 +179,56 @@ button {
     margin-right: 4px;
 }
 
+/* Nav */
+nav ul{
+   text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Main content */
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+ .content-block {
+     text-align: center;
+ }
+
+ .content-block img{
+    max-width: 100%;
+ }
+
+.rows-container {
+    overflow-y: auto;
+    height:calc(100% - 100px) ;
+}
+
+
+
 /* Player */
 
 .player {
     height: 100px;
     background-color: #1e1e1e;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    height: 100%;
+    background-color: #929292;
+    width: 30%;
 }
