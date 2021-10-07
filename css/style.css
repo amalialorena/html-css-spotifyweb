@@ -442,8 +442,8 @@ nav ul li a {
 }
 
 .right.column i {
-    font-size: 15px;
-    margin-right: 5px;
+    font-size: 12px;
+margin-right: 8px;
 }
 
 .right.column {
@@ -468,7 +468,9 @@ a:hover{
 .install span:hover {
     color:white;
 }
-
+.cta button{
+    transition:all .2s;
+}
 .cta button:hover {
     font-size: 13px;
 }
@@ -490,6 +492,13 @@ a:hover{
     text-decoration: underline;
 }
 
+.player-comands .fa-play-circle {
+    transition: all .2s;
+}
+
+.player-comands .fa-play-circle:hover {
+    transform: scale(1.2);
+}
 
 /* MD media query
 max-width: 878px */
