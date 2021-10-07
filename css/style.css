@@ -53,7 +53,7 @@ h2 + h4 {
 /* Aside */
 .top-column {
     max-height: 100%;
-    min-height: 0;
+    min-height: 360px;
     display: flex;
     flex-direction: column;
 }
@@ -349,6 +349,17 @@ nav ul li a {
 
 
 /* Player */
+.circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color:white;
+    position:absolute;
+    right:0;
+    top:-5px;
+    display:none;
+}
+
 .player-comands i{
     margin: 0 10px;
     vertical-align: middle;
@@ -387,6 +398,7 @@ nav ul li a {
     width: 30%;
     height: 100%;
     border-radius: 2px;
+    position: relative;
 }
 
 .song-bar-container span{
@@ -447,6 +459,13 @@ a:hover{
     display:block;
 }
 
+.slider:hover {
+    background-color:greenyellow;
+}
+
+.slider:hover .circle {
+    display: block;
+}
 
 
 /* MD media query
@@ -526,11 +545,4 @@ max-width: 552px*/
     .left .cover img {
        max-width: 50%;
     }
-}
-
-
-@media all and (max-height: 490px) {
-    .bottom-column {
-        display:none;
-    } 
 }
