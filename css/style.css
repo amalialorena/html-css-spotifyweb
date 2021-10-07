@@ -19,6 +19,7 @@ a {
 }
 h2 {
     color: white;
+    margin-left: 20px;
 }
 h3 {
     color: white;
@@ -35,6 +36,10 @@ h4 {
 
 .wrapper {
     height:calc(100vh - 100px);
+}
+
+h2 + h4 {
+    margin-left: 10px;
 }
 
 /* Aside */
@@ -179,7 +184,8 @@ main h3 {
 }
 
 main h4 {
-    margin:10px 0;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 
 
@@ -216,12 +222,12 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 6px;
 }
 
 nav ul li a {
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 13px;
 }
 
 /* Main content */
@@ -235,10 +241,8 @@ nav ul li a {
 
  .content-block {
      text-align: center;
-     width: calc((100% / 6) - 10px);
-     margin-right: 10px;
-     margin-top: 20px;
-     margin-bottom: 15px;
+     width: calc((100% / 6) - 20px);
+     margin: 15px 10px;
  }
 
  .round img{
@@ -277,6 +281,7 @@ nav ul li a {
     width: 20%;
     display: flex;
     align-items: center; 
+    justify-content: space-between;
 }
 
 /* Left column / Song */
@@ -384,6 +389,16 @@ nav ul li a {
 
 /* MD media query
 max-width: 878px */
+
+@media all and (max-width: 878px) {
+    .content-block {
+        min-width: 20%;
+    }
+}
+
+
+
+
 
 /* S media query 
 max-width: 639px*/
