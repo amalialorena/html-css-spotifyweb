@@ -107,11 +107,18 @@ aside .element {
     font-size: 13px;
     padding: 0 12px;
 }
-
-.element img{
-    height: 27px;
-    vertical-align: middle;
+.home.element svg path {
+    fill:white;
 }
+
+.element svg{
+    height: 27px;
+    vertical-align: middle; 
+}
+.element svg path{
+    fill: #929292;
+}
+
 .create-playlist {
     margin: 10px 0;
     vertical-align: middle;
@@ -467,6 +474,12 @@ i:hover{
     color:white;
 }
 
+.element:hover svg path{
+    
+    fill:white;
+    
+}
+
 a:hover{
     color:white;
 }
@@ -531,6 +544,7 @@ max-width: 552px*/
     aside .element span, 
     .side-playlist, 
     .playlist-name,
+    .bottom-column a,
     .bottom-column span,
     .border,
     .logo {
