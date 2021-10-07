@@ -74,6 +74,10 @@ a {
     color: #929292;
 }
 
+.home span {
+    color:white;
+}
+
 .logo img {
     height: 36px;
     margin-top: 15px;
@@ -250,14 +254,36 @@ nav ul li a {
  .content-block {
      text-align: center;
      width: calc((100% / 6) - 20px);
-     margin: 15px 10px;
+     margin: 15px 10px;  
+     position:relative;
+ }
+
+    .img-container {
+        position: relative;
+    }
+ .overlay {
+     background-color: rgba(0, 0, 0, 0.267);
+     position:absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right:0;
+     z-index: 1;  
+     display:none;
+ }
+
+ .overlay i {
+     font-size: 55px;
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%, -50%); 
  }
 
  .round img{
     border-radius: 50%;
 }
  
-
  .content-block img{
     max-width: 100%;
  }
@@ -394,6 +420,34 @@ nav ul li a {
     width: 20%;
     justify-content: flex-end;
 }
+
+/* Hover */
+
+i:hover{
+    color:white;
+}
+
+.left .icons i:hover{
+    color:white;
+}
+
+a:hover{
+    color:white;
+}
+
+.install span:hover {
+    color:white;
+}
+
+.cta button:hover {
+    font-size: 13px;
+}
+
+.content-block:hover .overlay {
+    display:block;
+}
+
+
 
 /* MD media query
 max-width: 878px */
