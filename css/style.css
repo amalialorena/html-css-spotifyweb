@@ -32,6 +32,14 @@ h4 {
     font-size: 10px;
 }
 
+aside a {
+    display: block;
+}
+
+.logo-smartphone {
+    display:none;
+}
+
 /* Container */
 
 .wrapper {
@@ -78,7 +86,7 @@ a {
     display: inline-block;
 }
 aside .element {
-    margin:7px 20px;
+    margin:7px 12px;
     font-size: 13px;
 }
 
@@ -136,7 +144,7 @@ aside .element {
     margin-bottom: 10px;
 }
 .bottom-column{
-    margin-left: 20px;
+    margin-left: 12px;
     position: relative;
     z-index: 1;
 }
@@ -405,9 +413,44 @@ max-width: 639px*/
     }
 }
 
-
-
-
-
 /* XS media query 
 max-width: 552px*/
+
+@media all and (max-width: 552px) {
+    aside .element span, 
+    .side-playlist, 
+    .playlist-name,
+    .bottom-column span,
+    .border,
+    .logo {
+        display:none;
+    }
+
+    aside {
+        width: 52px;
+    }
+
+    main {
+        width: calc(100% - 52px);
+    }
+
+    .logo-smartphone {
+        display:block;
+        margin: 10px auto 0;
+    }
+    .logo-smartphone img {
+        width: 20px;
+    }
+    .bottom-column {
+        margin:0;
+    }
+    .install img {
+        margin: 0 auto;
+        display:block;
+    }
+
+    .profile-img {
+        display: block;
+        margin: 18px auto 5px;
+    }
+}
