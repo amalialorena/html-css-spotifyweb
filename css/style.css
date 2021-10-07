@@ -301,7 +301,7 @@ nav ul li a {
 
 }
 .left .cover img{
-    width: 45px;
+   max-width: 45px;
     margin-right:5px;
 }
 
@@ -453,4 +453,30 @@ max-width: 552px*/
         display: block;
         margin: 18px auto 5px;
     }
+
+    .left.column{
+        float: left;
+        width: 20%;
+    }
+
+    .center.column {
+        float:left;
+        width: 40%;
+    }
+
+    .right.column{
+        float:right;
+        width: 20%;
+    }
+
+    .left .cover img {
+       max-width: 50%;
+    }
+}
+
+
+@media all and (max-height: 490px) {
+    .bottom-column {
+        display:none;
+    } 
 }
