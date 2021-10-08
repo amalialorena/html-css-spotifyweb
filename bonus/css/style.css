@@ -352,11 +352,6 @@ nav ul li a {
   justify-content: space-between;
 }
 
-.cover-name {
-  display: flex;
-  flex-direction: column;
-}
-
 .left .cover img {
   max-width: 45px;
   margin-right: 5px;
@@ -596,12 +591,5 @@ max-width: 552px*/
 
   .left .cover img {
     max-width: 50%;
-  }
-  .left .cover img{
-    display: none;
-  }
-
-  .center.column {
-    flex-shrink: 0;
   }
 }
