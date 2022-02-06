@@ -328,7 +328,6 @@ nav ul li a {
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 10px;
-  /* height: calc(100% - 100px); */
 }
 
 /* Player */
