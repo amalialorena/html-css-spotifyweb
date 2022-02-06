@@ -144,10 +144,11 @@ aside .element {
   font-size: 12px;
   margin-left: 20px;
   overflow: auto;
+  margin-bottom: 10px;
 }
 
-.playlist-name div {
-  margin-bottom: 10px;
+.playlist-name a {
+  margin-bottom: 8px;
 }
 
 .install span {
