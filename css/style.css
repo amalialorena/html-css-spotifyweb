@@ -45,6 +45,8 @@ aside a {
 
 .wrapper {
   height: calc(100vh - 100px);
+  display: flex;
+  align-items: stretch;
 }
 
 h2 + h4 {
@@ -61,7 +63,7 @@ h2 + h4 {
 aside {
   width: 200px;
   background-color: black;
-  height: 100%;
+  /* height: 100%; */
   float: left;
   color: #929292;
   display: flex;
@@ -170,6 +172,7 @@ aside .element {
 }
 .bottom-column {
   margin-left: 12px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 1;
 }
@@ -211,10 +214,10 @@ i {
 /* Main */
 
 main {
-  width: calc(100% - 200px);
   background-color: #101319;
   height: 100%;
-  float: left;
+  display: flex;
+  flex-direction: column;
 }
 main h3 {
   margin: 5px 0;
@@ -248,15 +251,18 @@ button {
 
 /* Nav */
 
-nav {
-  margin-bottom: 15px;
-}
 nav ul {
+  min-height: 50px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 20px;
   margin-left: 6px;
 }
@@ -290,6 +296,7 @@ nav ul li a {
 .img-container {
   position: relative;
 }
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.267);
   position: absolute;
@@ -320,7 +327,8 @@ nav ul li a {
 .rows-container {
   overflow-y: auto;
   overflow-x: hidden;
-  height: calc(100% - 100px);
+  padding-top: 10px;
+  /* height: calc(100% - 100px); */
 }
 
 /* Player */
@@ -329,7 +337,10 @@ nav ul li a {
   height: 100px;
   background-color: #1e1e1e;
   z-index: 1;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .player-bar {
@@ -548,6 +559,8 @@ max-width: 552px*/
   .bottom-column a,
   .bottom-column span,
   .border,
+  .cta,
+  nav,
   .logo {
     display: none;
   }
@@ -564,12 +577,15 @@ max-width: 552px*/
     display: block;
     margin: 10px auto 0;
   }
+
   .logo-smartphone img {
     width: 20px;
   }
+
   .bottom-column {
     margin: 0;
   }
+
   .install img {
     margin: 0 auto;
     display: block;
@@ -598,11 +614,22 @@ max-width: 552px*/
   .left .cover img {
     max-width: 50%;
   }
-  .left .cover img{
+
+  .left .cover img {
     display: none;
   }
 
   .center.column {
     flex-shrink: 0;
+  }
+
+  .player-bar .left,
+  .player-bar .right {
+    display: none;
+  }
+
+  .player-bar .center {
+    width: 100%;
+    padding: 0 10px;
   }
 }
